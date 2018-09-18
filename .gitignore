@@ -17,6 +17,10 @@
 !/log/.keep
 !/tmp/.keep
 
+<<<<<<< HEAD
+# Ignore Byebug command history file.
+.byebug_history
+=======
 # Ignore uploaded files in development
 /storage/*
 
@@ -28,3 +32,4 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+>>>>>>> a1ee1aafa86185f09afceb81132a4c93ef526a85

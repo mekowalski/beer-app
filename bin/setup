@@ -1,9 +1,17 @@
 #!/usr/bin/env ruby
+<<<<<<< HEAD
+require 'pathname'
+=======
+>>>>>>> a1ee1aafa86185f09afceb81132a4c93ef526a85
 require 'fileutils'
 include FileUtils
 
 # path to your application root.
+<<<<<<< HEAD
+APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
+=======
 APP_ROOT = File.expand_path('..', __dir__)
+>>>>>>> a1ee1aafa86185f09afceb81132a4c93ef526a85
 
 def system!(*args)
   system(*args) || abort("\n== Command #{args} failed ==")
@@ -17,9 +25,12 @@ chdir APP_ROOT do
   system! 'gem install bundler --conservative'
   system('bundle check') || system!('bundle install')
 
+<<<<<<< HEAD
+=======
   # Install JavaScript dependencies if using Yarn
   # system('bin/yarn')
 
+>>>>>>> a1ee1aafa86185f09afceb81132a4c93ef526a85
   # puts "\n== Copying sample files =="
   # unless File.exist?('config/database.yml')
   #   cp 'config/database.yml.sample', 'config/database.yml'

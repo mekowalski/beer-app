@@ -1,5 +1,8 @@
 require_relative 'boot'
 
+<<<<<<< HEAD
+require 'rails/all'
+=======
 require 'rails'
 
 require "active_model/railtie"
@@ -11,6 +14,7 @@ require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
 require "rails/test_unit/railtie"
+>>>>>>> a1ee1aafa86185f09afceb81132a4c93ef526a85
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -18,6 +22,11 @@ Bundler.require(*Rails.groups)
 
 module BeerApp
   class Application < Rails::Application
+<<<<<<< HEAD
+    # Settings in config/environments/* take precedence over those specified here.
+    # Application configuration should go into files in config/initializers
+    # -- all .rb files in that directory are automatically loaded.
+=======
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
@@ -25,5 +34,6 @@ module BeerApp
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+>>>>>>> a1ee1aafa86185f09afceb81132a4c93ef526a85
   end
 end
